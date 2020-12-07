@@ -19,8 +19,8 @@ print(onnx.checker.check_model(model))
 
 # print(onnx.helper.printable_graph(model.graph))
 
-face1 = Image.open('test_img/juban20_res.jpg')
-face2 = Image.open('test_img/xiaoling0_res.jpg')
+face1 = Image.open('test_img/test1_res.jpg')
+face2 = Image.open('test_img/test2_res.jpg')
 
 # use onnxruntime to infer
 session = onnxruntime.InferenceSession('./insight.onnx')
